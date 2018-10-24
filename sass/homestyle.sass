@@ -1,0 +1,38 @@
+.values-column
+    float: left
+    width: 33.33%
+    
+.about-column  
+    float: left 
+    width: 50%
+    //padding: 5px
+    text-align: center
+    text-align: center
+
+.home-content
+    a
+        border-style: solid
+        border-color: black
+        border-width: 5px
+        padding: 5px
+        font: 14px
+        margin: 10px
+        text-decoration: none
+        text-transform: uppercase
+        font: sans-serif
+        background: gray
+
+.home-testimonial
+    text-align: center
+
+/* Clear floats after the columns */
+.row:after
+    content: ""
+    display: table
+    clear: both
+
+
+@media screen and (max-width: 600px)
+    .values-column
+        width: 100%
+    .about-column
