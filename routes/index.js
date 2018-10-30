@@ -11,6 +11,10 @@ router.get('/company', function(req, res, next) {
   res.render('company', {title: 'Company | Accuracy'});
 })
 
+router.get('/about', function(req, res, next) {
+  res.render('about', {title: 'About | Accuracy'});
+})
+
 router.get('/team', function(req, res, next) {
   res.render('team', {title: 'Team | Accuracy'});
 })
