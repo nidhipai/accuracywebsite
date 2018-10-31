@@ -7,16 +7,8 @@ router.get('/', function(req, res, next) {
   res.render('index', { title: 'Accuracy' });
 });
 
-router.get('/company', function(req, res, next) {
-  res.render('company', {title: 'Company | Accuracy'});
-})
-
-router.get('/team', function(req, res, next) {
-  res.render('team', {title: 'Team | Accuracy'});
-})
-
-router.get('/testimonials', function(req, res, next) {
-  res.render('testimonials', {title: 'Testimonials | Accuracy'});
+router.get('/about', function(req, res, next) {
+  res.render('about', {title: 'About | Accuracy'});
 })
 
 router.get('/calendar', function(req, res, next) {
