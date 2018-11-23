@@ -1,0 +1,8 @@
+CREATE TABLE events (
+	eventID INT NOT NULL AUTO_INCREMENT,
+	eventName VARCHAR(255),
+	tag VARCHAR(255),
+	eStart TIMESTAMP,
+	eEnd TIMESTAMP,
+	PRIMARY KEY (eventID)
+)

@@ -6,7 +6,7 @@ var cookieParser = require("cookie-parser");
 var logger = require("morgan");
 var sassMiddleware = require("node-sass-middleware");
 
-
+var apiRouter = require("./routes/api");
 var indexRouter = require('./routes/index');
 
 var app = express();
@@ -14,7 +14,14 @@ var app = express();
 // view engine configuration
 var viewEngine = exphbs.create({
     extname: '.hbs',
-    defaultLayout: 'main'
+    defaultLayout: 'main',
+    helpers: {
+        'times': (n, block) => { 
+            let accum = '';
+            for (let i = 0; i < n; i++) accum += block.fn(i);
+            return accum;
+        }
+    }
 })
 
 app.engine('hbs', viewEngine.engine);
@@ -35,6 +42,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 // routes
 app.use('/', indexRouter);
+app.use('/api', apiRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
