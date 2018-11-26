@@ -1,9 +1,15 @@
 <h2 class="calendar-title">Accuracy Calendar</h2>
 
+<div class="calendar-header">
+    {{!-- <a id = "prev">Previous Month</a> --}}
+    <h3 id="month-name"></h3>
+    {{!-- <a id = "next">Next Month</a> --}}
+</div>
+
+<br>
+
 <div class="calendar">
-    <div class="calendar-header">
-        <h3>Month</h3>
-    </div>
+
     <table>
         <tr class="day-names">
             <td>Sunday</td>
@@ -12,61 +18,171 @@
             <td>Wednesday</td>
             <td>Thursday</td>
             <td>Friday</td>
-            <td>Sunday</td>
+            <td>Saturday</td>
         </tr>
         
         <div class="dates">
             <tr>
-                <td id="row1col1">a</td>
-                <td id="row1col2">a</td>
-                <td id="row1col3">a</td>
-                <td id="row1col4">a</td>
-                <td id="row1col5"></td>
-                <td id="row1col6"></td>
-                <td id="row1col7"></td>
+                <td id="row1col1"><div id="11day"></div><br><div id="11events"></div></td>
+                <td id="row1col2"><div id="12day"></div><br><div id="12events"></div></td>
+                <td id="row1col3"><div id="13day"></div><br><div id="13events"></div></td>
+                <td id="row1col4"><div id="14day"></div><br><div id="14events"></div></td>
+                <td id="row1col5"><div id="15day"></div><br><div id="15events"></div></td>
+                <td id="row1col6"><div id="16day"></div><br><div id="16events"></div></td>
+                <td id="row1col7"><div id="17day"></div><br><div id="17events"></div></td>
             </tr>
 
             <tr>
-                <td id="row2col1"></td>
-                <td id="row2col2"></td>
-                <td id="row2col3"></td>
-                <td id="row2col4"></td>
-                <td id="row2col5"></td>
-                <td id="row2col6"></td>
-                <td id="row2col7"></td>
+                <td id="row2col1"><div id="21day"></div><br><div id="21events"></div></td>
+                <td id="row2col2"><div id="22day"></div><br><div id="22events"></div></td>
+                <td id="row2col3"><div id="23day"></div><br><div id="23events"></div></td>
+                <td id="row2col4"><div id="24day"></div><br><div id="24events"></div></td>
+                <td id="row2col5"><div id="25day"></div><br><div id="25events"></div></td>
+                <td id="row2col6"><div id="26day"></div><br><div id="26events"></div></td>
+                <td id="row2col7"><div id="27day"></div><br><div id="27events"></div></td>
             </tr>
 
             <tr>
-                <td id="row3col1"></td>
-                <td id="row3col2"></td>
-                <td id="row3col3"></td>
-                <td id="row3col4"></td>
-                <td id="row3col5"></td>
-                <td id="row3col6"></td>
-                <td id="row3col7"></td>
+                <td id="row3col1"><div id="31day"></div><br><div id="31events"></div></td>
+                <td id="row3col2"><div id="32day"></div><br><div id="32events"></div></td>
+                <td id="row3col3"><div id="33day"></div><br><div id="33events"></div></td>
+                <td id="row3col4"><div id="34day"></div><br><div id="34events"></div></td>
+                <td id="row3col5"><div id="35day"></div><br><div id="35events"></div></td>
+                <td id="row3col6"><div id="36day"></div><br><div id="36events"></div></td>
+                <td id="row3col7"><div id="37day"></div><br><div id="37events"></div></td>
             </tr>
 
             <tr>
-                <td id="row4col1"></td>
-                <td id="row4col2"></td>
-                <td id="row4col3"></td>
-                <td id="row4col4"></td>
-                <td id="row4col5"></td>
-                <td id="row4col6"></td>
-                <td id="row4col7"></td>
+                <td id="row4col1"><div id="41day"></div><br><div id="41events"></div></td>
+                <td id="row4col2"><div id="42day"></div><br><div id="42events"></div></td>
+                <td id="row4col3"><div id="43day"></div><br><div id="43events"></div></td>
+                <td id="row4col4"><div id="44day"></div><br><div id="44events"></div></td>
+                <td id="row4col5"><div id="45day"></div><br><div id="45events"></div></td>
+                <td id="row4col6"><div id="46day"></div><br><div id="46events"></div></td>
+                <td id="row4col7"><div id="47day"></div><br><div id="47events"></div></td>
             </tr>
 
             <tr>
-                <td id="row5col1"></td>
-                <td id="row5col2"></td>
-                <td id="row5col3"></td>
-                <td id="row5col4"></td>
-                <td id="row5col5"></td>
-                <td id="row5col6"></td>
-                <td id="row5col7"></td>
+                <td id="row5col1"><div id="51day"></div><br><div id="51events"></div></td>
+                <td id="row5col2"><div id="52day"></div><br><div id="52events"></div></td>
+                <td id="row5col3"><div id="53day"></div><br><div id="53events"></div></td>
+                <td id="row5col4"><div id="54day"></div><br><div id="54events"></div></td>
+                <td id="row5col5"><div id="55day"></div><br><div id="55events"></div></td>
+                <td id="row5col6"><div id="56day"></div><br><div id="56events"></div></td>
+                <td id="row5col7"><div id="57day"></div><br><div id="57events"></div></td>
+            </tr>
+
+            <tr>
+                <td id="row6col1"><div id="61day"></div><br><div id="61events"></div></td>
+                <td id="row6col2"><div id="62day"></div><br><div id="62events"></div></td>
+                <td id="row6col3"><div id="63day"></div><br><div id="63events"></div></td>
+                <td id="row6col4"><div id="64day"></div><br><div id="64events"></div></td>
+                <td id="row6col5"><div id="65day"></div><br><div id="65events"></div></td>
+                <td id="row6col6"><div id="66day"></div><br><div id="66events"></div></td>
+                <td id="row6col7"><div id="67day"></div><br><div id="67events"></div></td>
             </tr>
 
         </div>
     </table>
 
+    <div id="test"></div>
+
 </div>
+
+<script>
+    var today = new Date(); //today is the first date of the target month
+    today.setDate(1);
+
+    var month = today.getMonth();
+    var year = today.getFullYear();
+    
+    //creating the events
+    var eventNames = ["Accuracy Open House", "Non-Profit Day"]
+    var eStarts = [
+        new Date("November 12, 2018 08:30:00"),
+        new Date("November 14, 2018 017:30:00")
+    ]
+    var eEnds = [
+        new Date("November 12, 2018 10:30:00"),
+        new Date("November 14, 2018 18:30:00")
+    ]
+    var tags = ["firm", "sale"]
+
+    var events = []
+
+
+    
+
+    //month header
+    var monthNames = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+    document.getElementById("month-name").innerHTML = monthNames[month];
+
+    //populate the dates
+    var firstDayOfMonth = today.getDay() + 1;
+    var lastDateOfMonth = new Date(today.getFullYear(), month + 1, 0)
+    var lastDayOfMonth = lastDateOfMonth.getDay() + 1
+
+    var cRow = 1
+    var idHold = 0;
+    var cCol = firstDayOfMonth
+
+    var xName
+    var xTime
+
+    for (i = 1; i < lastDateOfMonth.getDate() + 1; i++) { 
+        cCol = (firstDayOfMonth + i - 2)%7 + 1
+        idHold = cRow + "" +cCol + "day"
+        document.getElementById(idHold).innerHTML = i
+        document.getElementById(idHold).style.float = "right"
+        idHold = cRow + "" + cCol + "events"
+        for (x = 0; x < eventNames.length; x++) {
+           if (eStarts[x].getMonth() === month && eStarts[x].getDate() === i) {
+               xTime = (eStarts[x].getHours() + 11) % 12 + 1
+               if (eStarts[x] >= 12)
+                    xTime += "PM"
+                else
+                    xTime +="AM"
+               xName = eventNames[x]
+               document.getElementById(idHold).innerHTML = xTime + "-" + xName
+           } 
+           else {
+               //document.getElementById(idHold).innerHTML = " "
+           }
+            
+        }
+
+
+        if (cCol === 7)
+            cRow++
+    }
+
+
+
+    //if next arrow is pressed, today = add/remove a month
+
+    //test
+
+    //document.getElementById("test").innerHTML = events[1]; //test
+    
+</script>
+
+{{!-- 
+
+    fetch("/api/events/2018/8").then(res => res.json()).then(res => events = res {
+        
+    })
+    .catch(e => console.error(e))
+
+
+    fetch("/api/events/2018/8").then(res => res.json()).then(res => events = res {
+        for (i = 2; i < 4; i++) {
+            eventNames.push(events[i].eventname)
+            eStarts.push(events[i].estart)
+            eEnds.push(events[i].eend)
+            tags.push(events[i].tag)
+        }
+    
+    }).catch(e => console.error(e))
+   
+
+ --}}
