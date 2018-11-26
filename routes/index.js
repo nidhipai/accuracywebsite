@@ -35,5 +35,9 @@ router.get('/sitemap', function(req, res, next) {
   res.render('sitemap', {title: 'Sitemap | Accuracy'});
 })
 
+router.get('/credits', function(req, res, next) {
+  res.render('credits', { title: 'Website Credits | Accuracy' });
+});
+
 
 module.exports = router;

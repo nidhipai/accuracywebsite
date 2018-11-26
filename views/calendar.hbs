@@ -1,13 +1,15 @@
 <h2 class="calendar-title">Accuracy Calendar</h2>
 
+<div class="calendar-header">
+    {{!-- <a id = "prev">Previous Month</a> --}}
+    <h3 id="month-name"></h3>
+    {{!-- <a id = "next">Next Month</a> --}}
+</div>
+
+<br>
+
 <div class="calendar">
-    <div class="calendar-header">
-        <button id = "prev">Previous Month</button>
-        <h3 id="month-name"></h3>
-        <button id = "next">Next Month</button>
-        
-    </div>
-    <br>
+
     <table>
         <tr class="day-names">
             <td>Sunday</td>
@@ -90,12 +92,12 @@
 <script>
     var today = new Date(); //today is the first date of the target month
     today.setDate(1);
-    today.setMonth(8)
+
     var month = today.getMonth();
     var year = today.getFullYear();
     
     //creating the events
-    var eventNames = ["Accuracy Opening", "2nd Sample Event"]
+    var eventNames = ["Accuracy Open House", "Non-Profit Day"]
     var eStarts = [
         new Date("November 12, 2018 08:30:00"),
         new Date("November 14, 2018 017:30:00")
@@ -160,7 +162,7 @@
 
     //test
 
-    document.getElementById("test").innerHTML = events[1]; //test
+    //document.getElementById("test").innerHTML = events[1]; //test
     
 </script>
 
