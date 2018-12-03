@@ -39,5 +39,9 @@ router.get('/credits', function(req, res, next) {
   res.render('credits', { title: 'Website Credits | Accuracy' });
 });
 
+router.get('/privacy', function(req, res, next) {
+  res.render('privacy', { title: 'Privacy Policy | Accuracy' });
+});
+
 
 module.exports = router;

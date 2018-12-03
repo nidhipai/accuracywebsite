@@ -1,14 +1,22 @@
 .calendar-title
-    align-items: center
+    
 
 .calendar-hr
     margin-top: 50px
 
 .calendar-header
-    align-text: center
-    align-content: center
-    align-self: center
-    align-items: center
+    display: flex
+    flex-direction: row
+    justify-content: space-evenly
+    .np
+        font-size: 12px
+        text-decoration: none
+        text-transform: uppercase
+        letter-spacing: 1px
+        background: gray
+        color: white
+        padding: 5px
+        box-shadow: 2.5px 2px 2.5px #acafad
     
 .calendar
     display: flex
@@ -23,8 +31,9 @@
             display: flex
             flex-direction: column
             min-height: 250px
+            border: 1.5px solid black
         td
-            border: 2px solid black
+            border: 1px solid black
             padding: 5px
             display: block
             flex: 1
@@ -32,3 +41,4 @@
             display: flex
             flex-direction: row
             flex: 1
+
