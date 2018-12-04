@@ -1,6 +1,7 @@
 <div class="sat">
 
     <h2 class="calendar-title">Accuracy Calendar</h2>
+    <br>
 
     <div class="calendar-header">
         <a class="np" id="prev">Previous Month</a>
@@ -264,14 +265,24 @@
                 var col = cestart.getDay() + 1;
                 var idHold = "" + row + col + "events"
                 console.log("idHold: " + idHold)
-                document.getElementById(idHold).innerHTML += xTime + " - " + xName
-                styleEvent(idHold)
+                document.getElementById(idHold).innerHTML += xTime + ": " + xName
+                var tag = events[x].tag
+                styleEvent(idHold, tag)
             }
         }
 
-        function styleEvent(idHold) {
-            document.getElementById(idHold).style.backgroundColor = "#73a2ef"
+        function styleEvent(idHold, tag) {
             document.getElementById(idHold).style.fontSize = "14px"
+            if (tag === "firm")
+                document.getElementById(idHold).style.backgroundColor = "rgb(38, 166, 154)"
+            else if (tag === "break")
+                document.getElementById(idHold).style.backgroundColor = "rgb(142, 154, 232)"
+            else if (tag === "com")
+                document.getElementById(idHold).style.backgroundColor = "rgb(90, 192, 218)"
+            else if (tag === "marketing")
+                document.getElementById(idHold).style.backgroundColor = "rgb(105, 169, 203)"
+            else
+                document.getElementById(idHold).style.backgroundColor = "rgb(142, 154, 232)"
         }
 
         function addMonthName(month, year) {
