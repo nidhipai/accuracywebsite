@@ -1,4 +1,4 @@
-DELETE FROM events *;
+
 
 INSERT INTO events (eventname, tag, estart, eend) VALUES 
 ('Accuracy Opening', 'firm', '2015-09-01 08:00:00', '2018-09-01 10:00:00'),
