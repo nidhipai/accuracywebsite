@@ -1,11 +1,16 @@
 const pg = require("pg");
 const Pool = pg.Pool;
+// const pool = new Pool({
+//     user: "postgres",
+//     database: 'accuracywebsite',
+//     password: 'qwerty',
+//     port: 5432,
+// });
+
 const pool = new Pool({
-    user: "postgres",
-    database: 'accuracywebsite',
-    password: 'qwerty',
-    port: 5432,
-});
+    connectionString: process.env.DATABASE_URL,
+  ssl: true
+})
 
 function getDaysinMonth(month, year) {
     return new Date(year, month, 0).getDate();
